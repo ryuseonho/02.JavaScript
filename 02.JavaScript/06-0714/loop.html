@@ -1,0 +1,84 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <pre><script>
+        // - 반복문의 종류
+        //      ★ while 문      : 조건에 의해 반복 수행하는 제어문
+        //       - do-while 문   : 조건에 의해 최소 1번 반복 수행하는 제어문
+        //   ★★★ for 문        : 횟수, 범위만큼 반복 수행하는 제어문
+        //       - for-in 문     : 배열이나 객체를 순차 탐색하는 제어문
+
+        document.writeln("hello world!");
+        document.writeln("hello world!");
+        document.writeln("hello world!");
+        document.writeln("hello world!");
+        document.writeln("hello world!");
+        
+        document.writeln("<hr>")
+        //while문 - ~하는 동안 을 의미
+        //  - 특정 조건을 만족할 때 까지 반복 수행
+        //  - 조건과 반복 수행할 코드만 있으면 되기 때문에 구조 자체는 간단하다
+        //  - if 구문과 유사하다
+        // while () {
+        //     // while 문의 조건식을 만족하면 수행하는 블록
+        // } // 블록이 끝나면 조건식 검사부터 다시 수행한다.
+        
+        // while 문을 이용하여 같은 코드를 다섯 번 출력
+        // 카운팅 (counting)
+        // 현재 카운트 정보  >> 변수를 선언
+        // 카운트 검사       >> 조건식
+        // 카운트           >> 증감연산자
+        
+        // 출력 횟수
+        var count = 0; // -> 특별한 경우 아니면 항상 0부터 시작
+
+        // 최대 출력 횟수
+        var MAX = 5;
+
+        // 출력 횟수가 5가 될 때 까지 반복 수행
+        while (count < MAX) {
+            //출력
+        document.writeln("hello world!");
+        // 출력 횟수 증가
+        count++;
+        }
+        // - 중복된 코드가 없어진다
+        // - 반복 횟수가 값(조건)에 의해 반복하기 때문에 유동적으로 동작시킬 수 있다.
+
+    </script></pre>
+
+
+    <pre><script>
+        // 1 이상 10 이하의 숫자들을 출력하는 반복문을 작성
+        var n1 = 1;
+        while(n1 <= 10) {
+            document.writeln("n1 = " + n1);
+            n1++;
+        }
+    </script></pre>
+
+    <pre><script>
+        var n2 = 20;
+        while(n2 >= 1) {
+            document.writeln("n2 : " + n2);
+            n2--;
+        }
+
+        
+    </script></pre>
+    <pre><script>
+        var n3 = 100;z
+        while (n3 < 150){
+            if(n3 % 2 == 0) {
+            document.writeln("n3 :" + n3);
+            }
+            n3++;
+        }
+    </script></pre>
+</body>
+</html>

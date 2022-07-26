@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example01 - IF Statement</title>
+</head>
+<body>
+    <pre><script>
+        // n1 의 값이 짝수인지 홀수인지 0인지 출력
+        var n1 = 0;
+        if (n1 == 0) {
+            document.writeln("n1 is zero.");
+        }
+        else if(n1 % 2 == 0) {
+            document.writeln("n1 is even number!");
+        }
+        else if (n1 % 2 == 1) {
+            document.writeln("n1 is odd number!");
+        }
+        
+    </script></pre>
+
+    <!-- <script>
+        if (n2 % 3 == 0 && n2 % 5 == 0){
+        document.writeln("fizzbuzz");
+        } else if (n2 % 3 == -0) {
+            document.writeln("fizz");
+        }
+            else if (n2 % 5 == 0){
+                document.writeln("buzz");
+            }
+    </script> -->
+
+    <script>
+        switch (colorCode) {
+            case 1:
+                document.writeln("color:yellow");
+            case 2:
+                document.writeln("color:blue");
+                    
+            case 3:
+                document.writeln("color:orange");
+        }
+    </script>
+    <h2>co workers</h2>
+    <script>
+        var coworkers = ['html', 'css','java', 'jquery','asfdljk']
+        var i = 0;
+        while(i < coworkers.length) {
+            document.writeln('<li><a href="https://naver.com">'+coworkers[i]+'</a></li>');
+            i = i + 1;
+        }
+    </script>
+</body>
+</html>

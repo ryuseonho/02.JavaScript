@@ -1,0 +1,76 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../외부 파일/dark.css">
+    <link rel="stylesheet" href="../외부 파일/reset.css">
+    <title>Loop</title>
+    <body>
+        <pre><script>
+            // 함수 (function)
+            //
+            //  정의 : 프로그램에서 사용 할 함수를 작성하는 것.
+            //       : function 키워드를 통해 함수는 한 곳에 정의한다.
+            //
+            // - 함수 이름 (식별자)
+            //
+            // - 인자 (argument)
+            //      : 함수를 호출 할 때 함수에 전달되는 값.
+            //
+            //  -매개변수 ( parameter)
+            //      : 함수에 전달되는 인자 값을 저장하기 위한 변수.
+            //      : 인자 값이 없는 함수면 매개변수는 작성하지 않아도 된다.
+            //
+            //  - 반환 값 (retrun value)
+            //      : 함수의 결과 값.
+            //      : 결과 값을 구하는 함수가 아니면 굳이 사용하지 않아도 된다.
+            //
+            //  - 함수 호출 (function call)
+            //      : 정의된 함수를 사용하는 것을 의미.
+            //      : 함수의 이름뿐만 아니라 함수에 전달할 인자까지 작성해야 한다.
+            //      : 인자가 없는 경우에는 소괄호만 작성.
+            //      : 함수를 호출하면 프로그램의 흐름이 함수가 정의된 곳으로 이동하며,
+            //        함수가 끝나면 함수를 호출한 곳으로 되돌아 온다.
+
+            // hello world를 출력하는 함수를 정의
+            function hello () {
+                document.writeln("hello world!" );
+            }
+
+            // 정의된 함수를 호출
+            //  - 함수를 호출할 때는 반드시 소괄호까지 작성한다.
+            hello();
+            hello();
+            hello();
+            hello();
+            hello();
+
+            // f(x) = x * 2
+            // 위와 같은 식을 구현한 함수 작성
+            function f(x) {
+                document.writeln(x + " * 2 = " + (x*2) );
+            }
+
+            f(2);
+            f(5);
+            f(10);
+            // >> 함수에서 반환되는 값이 없기 때문에 함수의 결과 값이 없다
+            // >> 때문에 f(5) + 10 이와 같은 연산을 할 수 없다
+            document.writeln(f(2) + 10);
+
+
+            // g(x) = x + 10
+            // 위의 식을 구현하여 결과를 반환하는 함수 작성.
+            function g(x) {
+                return x + 10;
+                //return 키워드 : 함수를 종료하며, 함수를 호출한 곳으로 되돌아간다.
+                //              : 이 때, 키워드 다음에 표현식을 작성하면 해당 값을 가지고 되돌아간다.
+            }
+
+            document.writeln(g(10));
+            document.writeln(g(10 + 5));
+        </script></pre>
+    </body>
+</head>
+</html>

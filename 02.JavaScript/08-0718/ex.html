@@ -1,0 +1,60 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+    <body>
+        <pre><script>
+            for(var i = 1; i <= 5; i++) {
+                console.log("i = " + i);
+                for(var j = 1; j <= 3; j++){
+                    console.log("\tj = " + j);
+                }
+            }
+        </script></pre>
+        <pre><script>
+            var max_day = 19, max_time = 4;
+            for (var day = 1; day <= max_day; day++){
+                for (var time = 1; time <= max_time; time ++) {
+                    document.writeln(day + "일차" + time + "교시입니다");
+                }
+            }
+        </script></pre>
+        <hr>
+        <hr>
+        <hr>
+        <pre><script>
+            for(var dan = 2; dan <= 9; dan++ ){
+                document.writeln("============" + dan + "단===========");
+                for(var n = 1; n <= 9; n++) {
+                    document.writeln(dan + " * " + n + " = " + (dan * n));
+                }
+            }
+        </script></pre>
+        <hr>
+        <pre><script>
+            // 제어문
+            // - 종류
+            //      break    : 반복문을 즉시 종료
+            //      continue : 반복 수행 중인 블록을 종료 즉, 다음 반복으로 넘어간다
+            var number = [4, 30, 45, 12, 7, 17, 5, 3, 1, 16];
+            var search = 7;
+
+            for(var i = 0; i < number.length; i++) {
+                document.writeln("Searching....");
+                // 찾고자 하는 값이 다르면 (!=) 다음 값이랑 비교하기 위해
+                // 다음 반복으로 넘어간다
+                if(search != number[i])
+                continue;
+                // if(search == number[i]) 
+                
+                    document.writeln("complete");
+                    document.writeln("index of " + search + " = " + i);
+                    break;
+                
+            }
+        </script></pre>
+    </body>
+</head>
+</html>

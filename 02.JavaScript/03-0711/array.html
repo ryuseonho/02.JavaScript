@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../외부 파일/dark.css">
+    <link rel="stylesheet" href="../../외부 파일/reset.css">
+</head>
+<body>
+    <h1>Loop</h1>
+    <ul>
+        <script>
+            document.write('<li>1</li>');
+            var i = 0;
+            while(i < 3){
+            document.write('<li>2</li>');
+            document.write('<li>3</li>');
+            i = i + 1;
+            }
+            document.write('<li>4</li>');
+        </script>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1>Array</h1>
+    <h2>Syntax</h2>
+    <script>
+        var coworkers = ["egoing", "leezche"]
+    </script>
+    <h2>get</h2>
+    <script>
+        document.write(coworkers[0]); //index라고 불림 (index 0)
+        document.write(coworkers[1]); // (index 1)
+    </script>
+    <h2>add</h2>
+    <script>
+        coworkers.push('duru');
+        coworkers.push('taehoN');
+    </script>
+    <h2>count</h2>
+    <script>
+        document.write(coworkers.length)
+    </script>
+
+
+
+
+
+
+
+
+    <pre><script>
+        
+
+        var arr = [10, 20, 30, 40];
+        
+        var arr2 = ["student01, student02, student03"];
+
+        document.writeln("arr = " + arr);
+        document.writeln("arr2 = " + arr2);
+
+        arr.length; 
+        arr2.length; 
+        document.writeln("arr.lengh = " + arr.length);
+        document.writeln("arr2.lengh = " + arr2.length);
+
+        // document.writeln("last item of arr = " arr[arr.length - 1]);
+
+        var score = [87, 90, 77, 67, 90];
+
+        var total = score[0] + score[1] + score[2] + score[3] + score[4];
+
+        var avg = total / score.length;
+
+        document.writeln("score = " + score);
+        document.writeln("total = " + total);
+        document.writeln("average = " + avg);
+    </script></pre>
+    <pre><script>
+        var kindofdrink =[
+            "americano",
+            "cafe latte",
+            "cold brew",
+            "ice tea",
+            "mike tea",
+            "grapefruit ade"
+        ];
+
+        var selected = 5;
+        document.writeln("third drink = " + kindofdrink[selected -1]);
+    </script></pre>
+</body>
+</html>
